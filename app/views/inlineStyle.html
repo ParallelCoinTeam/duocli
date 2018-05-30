@@ -1,0 +1,305 @@
+
+    
+    <style amp-custom>
+      /* any custom style goes here */
+      
+      *{
+        box-sizing: border-box;
+      }
+      body {
+        background-color: gray;
+        font-family: 'Raleway', sans-serif;
+    
+      }
+      amp-img {
+    
+    
+      }
+      
+    dl{
+      flex: 1;
+      padding: 1rem;
+    }
+    dt{
+      padding: .2rem .5rem;
+      font-size: 1rem;
+      background-color: #ff5;	
+    }
+    dd{
+      margin-bottom: .5rem;
+      padding: .2rem .5rem;
+      font-size: 1rem;
+      background-color: #f00;	
+    }
+    
+    
+    
+    
+    /* GRID */
+    
+    
+    .frow{
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .fcol1{
+      flex: 0 0 10%;
+    }
+    .fcol2{
+      flex: 0 0 20%;
+    }
+    .fcol3{
+      flex: 0 0 30%;
+    }
+    .fcol4{
+      flex: 0 0 40%;
+    }
+    .fcol5{
+      flex: 0 0 50%;
+    }
+    .fcol6{
+      flex: 0 0 60%;
+    }
+    .fcol7{
+      flex: 0 0 70%;
+    }
+    .fcol8{
+      flex: 0 0 80%;
+    }
+    .fcol9{
+      flex: 0 0 90%;
+    }
+    
+    /* GRID */
+    
+    
+      .home-button {
+      margin-top: 8px;
+    }
+    .headerbar {
+      position: relative;
+      z-index: 999;
+      width: 100%;
+      display: flex;
+      padding: 1rem;
+      justify-content: center;
+      align-items: center;
+    }
+    .site-name {
+        padding: 1rem;
+        background-color: #f00;
+        font-size: 2rem;
+      color: #ff0;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 5px;
+    }
+    
+    
+    #main{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      min-height: 50vh;
+    }
+    
+    
+    
+    
+    
+    /* HOME */
+    
+    
+    .hml{
+    display: block;
+      width: 96%;
+      margin: 0 2%;
+    }
+    /*
+    .hac span{
+      font-size: 0%;
+    }
+    .hac:hover span{
+      font-size: 100%;
+    }
+    */
+    
+    /* HOME */
+    
+    
+    div[role="list"]{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      align-items: flex-start;
+    }
+    div[aria-label="Show more"]{
+        background-color: #f56;
+        padding: 1rem;
+        text-align: center;
+        margin-top: -3rem;
+    }
+    div[role="listitem"]{
+      width: 100%;
+    
+    
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;	
+      list-style: none;
+    }
+    .listitem dl{
+      flex: 0 0 100%;
+    }
+    a.hcoin{
+      display: inline-flex;
+      margin: 5px;
+      padding:  5px;
+      
+      background-color: #fff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 1px;
+    }
+    a.hcoin:hover{
+      
+      background-color: #445;
+      color: #ff0;
+    }
+    
+    main.coin{
+      display: flex;
+      flex-direction: row;
+      padding: 0 1rem;
+    }
+    
+    
+    
+    .allcoins, .bcoins{
+      padding: 3rem;
+    }
+    .allcoins{
+      padding: 3rem;
+    }
+    .bcoins a.hcoin{
+      display: flex;
+      margin: 5px;
+      padding: 5px;
+      font-size: 1.2rem;
+      background-color: #f09;
+      color: #ff0;
+      text-decoration: none;
+      border-radius: 1px;
+    }
+    .bcoins a.hcoin:hover{
+      background-color: #445;
+      color: #fff;
+    }
+    
+    
+    /* explorer */
+    
+    
+    .explorer{
+      max-width: 75em;
+      margin: 0 auto;
+      flex-direction: column;
+    }
+    
+    
+    
+    .explorer form{
+      margin-bottom: 3rem;
+    }
+    .explorer input[type="bsearch"]{
+      padding: 1rem;
+      font-size: 1rem;
+    }
+    
+    .explorer input[type="submit"]{
+      padding: 1rem;
+      font-size: 1rem;
+      background-color: #f05;
+      border-radius: 0;
+    }
+    
+    
+    
+    .ccent span{
+      text-align: center;
+    }
+    
+    .ehead{
+    padding-bottom: 1rem;
+    
+    }
+    .ehead span{
+      padding: 1rem;
+     background-color: #ff8;	
+    }
+    .ebody{
+    padding-bottom: 1rem;
+    }
+    
+    .ebody span{
+      padding: .3rem;
+     background-color: #f8f;
+    }
+    
+    
+    .explorer div[role="list"]{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .block{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    
+      padding: 0.3rem;
+      background-color: #546;
+    
+    }
+    /* grid */
+      /*.f100, .f25, .f50, .f75, .f3d, .f6d{
+        flex: 0 0 100%;
+      }
+    @media only screen and (min-width:35em){
+      .f25{
+        flex: 0 0 25%;
+      }
+      .f50{
+        flex: 0 0 50%;
+      }
+      .f75{
+        flex: 0 0 75%;
+      }
+      .f3d{
+        flex: 0 0 calc(100%/3);
+      }
+      .f6d{
+        flex: 0 0 calc(100%/3*2);
+      }
+    }
+    /*
+    /* grid */
+    
+    @media only screen and (min-width:35em){
+      .listitem dl{
+        flex: 0 0 25%;
+      }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    </style>
+    

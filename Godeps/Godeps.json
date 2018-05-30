@@ -1,0 +1,6 @@
+{
+	"ImportPath": "github.com/ParallelCoinTeam/comhttp_client",
+	"GoVersion": "go1.7",
+	"GodepVersion": "v78",
+	"Deps": []
+}

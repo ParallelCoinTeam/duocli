@@ -1,0 +1,19 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+module:testrunner
+
+GET     /                                       Application.Index
+GET     /about                                  Application.About
+#GET     /curl-test                              Application.CurlTest
+#GET     /my-books                               BookController.MyBooks
+GET     /published-books                        BookController.PublishedBooks
+GET     /weather                                WeatherController.GetWeather
+POST    /weather-data                           WeatherController.WeatherData
+
+# Ignore favicon requests
+GET     /favicon.ico                            404
+
+# Catch all
+*       /:controller/:action                    :controller.:action

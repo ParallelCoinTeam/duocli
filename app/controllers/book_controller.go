@@ -1,13 +1,8 @@
 package controllers
 
 import (
-//	"encoding/json"
-//	"fmt"
+	"github.com/ParallelCoinTeam/comhttp_client/app/services"
 	"github.com/revel/revel"
-	//"github.com/ParallelCoinTeam/duocli/app/models"
-	// "github.com/ParallelCoinTeam/duocli/app/routes"
-//	"github.com/ParallelCoinTeam/duocli/app/services"
-//	"strconv"
 )
 
 type BookController struct {
@@ -22,6 +17,7 @@ func (c BookController) PublishedBooks() revel.Result {
 	server := c.Session["server"]
 	return c.Render(server, data)
 }
+
 // func (c BookController) EditBook(book models.Book) revel.Result {
 
 // 	bookJson, err := json.Marshal(book)

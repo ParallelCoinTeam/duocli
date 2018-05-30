@@ -1,10 +1,9 @@
 package controllers
 
 import (
-//	b64 "encoding/base64"
+	//	b64 "encoding/base64"
+	"github.com/ParallelCoinTeam/comhttp_client/app/routes"
 	"github.com/revel/revel"
-	"github.com/ParallelCoinTeam/duocli/app/routes"
-	"github.com/ParallelCoinTeam/duocli/app/services"
 )
 
 type Application struct {
@@ -25,16 +24,6 @@ func (c Application) Index() revel.Result {
 
 func (c Application) About() revel.Result {
 
-	user_id := c.Session["user_id"]
-	user_name := c.Session["user_name"]
 	server := c.Session["server"]
-	return c.Render(user_id, user_name, server)
-}
-
-func (c Application) CurlTest() revel.Result {
-
-	user_id := c.Session["user_id"]
-	user_name := c.Session["user_name"]
-	server := c.Session["server"]
-	return c.Render(user_id, user_name, server)
+	return c.Render(server)
 }

@@ -22,13 +22,6 @@ func (_ tApplication) About(
 	return revel.MainRouter.Reverse("Application.About", args).URL
 }
 
-func (_ tApplication) CurlTest(
-		) string {
-	args := make(map[string]string)
-	
-	return revel.MainRouter.Reverse("Application.CurlTest", args).URL
-}
-
 
 type tBookController struct {}
 var BookController tBookController
@@ -39,27 +32,6 @@ func (_ tBookController) PublishedBooks(
 	args := make(map[string]string)
 	
 	return revel.MainRouter.Reverse("BookController.PublishedBooks", args).URL
-}
-
-
-type tWeatherController struct {}
-var WeatherController tWeatherController
-
-
-func (_ tWeatherController) GetWeather(
-		) string {
-	args := make(map[string]string)
-	
-	return revel.MainRouter.Reverse("WeatherController.GetWeather", args).URL
-}
-
-func (_ tWeatherController) WeatherData(
-		address string,
-		) string {
-	args := make(map[string]string)
-	
-	revel.Unbind(args, "address", address)
-	return revel.MainRouter.Reverse("WeatherController.WeatherData", args).URL
 }
 
 

@@ -43,21 +43,7 @@ func main() {
 				Args: []*revel.MethodArg{ 
 				},
 				RenderArgNames: map[int][]string{ 
-					31: []string{ 
-						"user_id",
-						"user_name",
-						"server",
-					},
-				},
-			},
-			&revel.MethodType{
-				Name: "CurlTest",
-				Args: []*revel.MethodArg{ 
-				},
-				RenderArgNames: map[int][]string{ 
-					39: []string{ 
-						"user_id",
-						"user_name",
+					28: []string{ 
 						"server",
 					},
 				},
@@ -72,32 +58,10 @@ func main() {
 				Args: []*revel.MethodArg{ 
 				},
 				RenderArgNames: map[int][]string{ 
-					23: []string{ 
+					18: []string{ 
 						"server",
 						"data",
 					},
-				},
-			},
-			
-		})
-	
-	revel.RegisterController((*controllers.WeatherController)(nil),
-		[]*revel.MethodType{
-			&revel.MethodType{
-				Name: "GetWeather",
-				Args: []*revel.MethodArg{ 
-				},
-				RenderArgNames: map[int][]string{ 
-					14: []string{ 
-					},
-				},
-			},
-			&revel.MethodType{
-				Name: "WeatherData",
-				Args: []*revel.MethodArg{ 
-					&revel.MethodArg{Name: "address", Type: reflect.TypeOf((*string)(nil)) },
-				},
-				RenderArgNames: map[int][]string{ 
 				},
 			},
 			

@@ -13,5 +13,5 @@ func (c BookService) GetBooks(session revel.Session) map[string]interface{} {
 }
 
 func (c BookService) GetABook(book_id string, session revel.Session) map[string]interface{} {
-	return c.CallGetBackend("GET", "book/"+book_id, session)
+	return c.CallGetBackend("GET", "book/"+slug, session)
 }

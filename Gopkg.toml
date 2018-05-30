@@ -27,7 +27,7 @@
 
 [[constraint]]
   branch = "master"
-  name = "github.com/ParallelCoinTeam/comhttp_client"
+  name = "github.com/ParallelCoinTeam/duocli"
 
 [[constraint]]
   name = "github.com/revel/modules"

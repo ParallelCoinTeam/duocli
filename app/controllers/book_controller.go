@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"github.com/ParallelCoinTeam/comhttp_client/app/services"
+	"github.com/ParallelCoinTeam/duocli/app/services"
 	"github.com/revel/revel"
 )
 

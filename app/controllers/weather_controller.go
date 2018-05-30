@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"github.com/revel/revel"
-//	"github.com/ParallelCoinTeam/comhttp_client/app/services"
+//	"github.com/ParallelCoinTeam/duocli/app/services"
 )
 
 type WeatherController struct {

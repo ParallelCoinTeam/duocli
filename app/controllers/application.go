@@ -3,8 +3,8 @@ package controllers
 import (
 //	b64 "encoding/base64"
 	"github.com/revel/revel"
-	"github.com/ParallelCoinTeam/comhttp_client/app/routes"
-//	"github.com/ParallelCoinTeam/comhttp_client/app/services"
+	"github.com/ParallelCoinTeam/duocli/app/routes"
+	"github.com/ParallelCoinTeam/duocli/app/services"
 )
 
 type Application struct {

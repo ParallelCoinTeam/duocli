@@ -4,9 +4,9 @@ import (
 //	"encoding/json"
 //	"fmt"
 	"github.com/revel/revel"
-	//"github.com/ParallelCoinTeam/comhttp_client/app/models"
-	// "github.com/ParallelCoinTeam/comhttp_client/app/routes"
-//	"github.com/ParallelCoinTeam/comhttp_client/app/services"
+	//"github.com/ParallelCoinTeam/duocli/app/models"
+	// "github.com/ParallelCoinTeam/duocli/app/routes"
+//	"github.com/ParallelCoinTeam/duocli/app/services"
 //	"strconv"
 )
 
